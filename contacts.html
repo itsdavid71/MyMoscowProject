@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MyMoscow - Контакты</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    
+</head>
+<body>
+    <div class="wrapper-main-contacts">
+        <div class="black">
+            <div class="wrapper">
+                <header>
+                    <div class="nav">
+                            <div class="logo">
+                                <img src="icons/spasskaya-tower.png" alt="">
+                            </div>
+                        <div class="nav-item">
+                            <a href="index.html">Главная</a>
+                            <a href="trips.html">Наши услуги</a>
+                            <a href="">О компании</a>
+                            <a href="contacts.html">Контакты</a>
+                            <a href="">Отзывы</a>
+                            <a onclick="popUp('.login');" >Войти в аккаунт</a>
+                        </div>
+                        <div class="menu-btn">
+                            <div class="menu-btn-stick"></div>
+                            <div class="menu-btn-stick"></div>
+                            <div class="menu-btn-stick"></div>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    <div class="main-block">
+                        <div class="main-text">
+                            <h1>MyMoscow</h1>
+                            <h2>Агенство интересных маршрутов</h2>
+                            <h2>- Контакты -</h2>
+                            <div class="circles">
+                                <div class="circle-box"></div>
+                                <div class="circle-box"></div>
+                                <div class="circle-box"></div>
+                                <!-- <a href=""><div class="circle-box"></div></a>
+                                <a href=""><div class="circle-box"></div></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="contacts">
+            <h3>Контакты</h3>
+            <h4 class="left-text">
+                <br>Мы - команда тех, кто любит историю и любит Москву
+                <br><br>Москва – это не только место по «заколачиванию денег» и «взращиванию карьеры», а еще и бесконечно красивые памятники природы, заказники, парки, заповедники. Активный отдых в Москве и Подмосковье – это отличная возможность вырваться из душного мегаполиса куда-нибудь в «дебри», навстречу приключениям. К счастью, не все Подмосковье еще «облагорожено» асфальтными дорожками и высоченными коттеджными заборами. Еще встречаются места, настолько глухие и далекие, что, очутившись там, кажется, что ты – первый человек, ступивший на эту землю.    
+                <br><br>Там, где не проедет автомобилист и даже велосипедист, найдет лазейку и откроет для себя все красоты 100% бездорожья турист, проводящий свой активный отдых в Подмосковье.
+            </h4>
+            <div class="contact-blocks">
+                <div class="contact-block">
+                    <div class="contact-photo one"></div>
+                    <div class="contact-info">
+                        <div class="contact-info-block">
+                            <div class="contact-name">
+                                <p class="contact-fio">Александр Рыбаков</p>
+                                Директор
+                            </div>
+                            <div class="contact-mail">
+                                По всем вопросам пишите на почту:
+                                <p class="blue-text">ryakov@mymoscow.ru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-block">
+                    <div class="contact-photo two"></div>
+                    <div class="contact-block-info">
+                        <div class="contact-info-block">
+                            <div class="contact-name">
+                                <p class="contact-fio">Елена Белкина</p>
+                                Руководитель корпоративного отдела
+                            </div>
+                            <div class="contact-mail">
+                                По всем вопросам пишите на почту:
+                                <p class="blue-text">belkina@mymoscow.ru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-blocks-information">
+                <div class="contact-information">
+                    <div class="contact-information-field">
+                        <div><img src="img/maps-and-flags.png" alt=""></div>
+                        <div class="contact-info-text">Москва, <br>Большая Спасская 12</div>
+                    </div>
+                    <div class="contact-information-field">
+                        <div> <img src="img/close-envelope.png" alt=""></div>
+                        <div class="contact-info-text">E-mail:<br>info@mymoscow.ru</div>
+                    </div>
+                    <div class="contact-information-field">
+                        <div><img src="img/telephone.png" alt=""></div>
+                        <div class="contact-info-text">Телефон:<br>8(495)626-46-00</div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <!-- <div class="contact-form-field">
+                        <p>Напишите нам</p><br>
+                        <input type="text" name="user-fio">
+                        <input type="email" name="user-email">
+                        <input type="text" name="user-message">
+                    </div> -->
+                <form method="GET" id="contact-form">
+                    <div class="message-title">Напишите нам</div>
+                    <label>
+                        <input id="name" maxlength="96" minlength="6"  required type="text" name="name" autocomplete="off"  placeholder="ФИО" >
+                        <!-- <span>ФИО</span> -->
+                    </label> <br><br>
+                    <label>
+                        <input id="email" maxlength="32" minlength="6" required type="email" name="email" autocomplete="off"  placeholder="E-Mail" >
+                        <!-- <span>E-mail</span> -->
+                    </label> <br><br>
+                    <label>
+                        <textarea id="message" maxlength="255" minlength="6" maxlength="800" required type="text" name="message" autocomplete="off"  placeholder="Ваш текст" ></textarea>
+                        <!-- <span>Ваше сообщение</span> -->
+                    </label> <br><br>
+                    <input type="submit" name="" id="form-btn" value="Отправить">
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="yandex-map-block">
+        <div class="yandex-map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab6b9af875dc22f78bd865dd4c85fd66d9335fdb91fdc2065abcb90088292fa5a&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+    </div>
+    <footer>
+            <div class="wrapper space">
+                <div class="footer-text">
+                    <div class="logo">
+                        <img src="icons/spasskaya-tower.png" alt="">
+                    </div>
+                    <p class="footer-desc">Мы приглашаем тебя на самые разные экскурсии по Москве. Автобусные и пешеходные, на целый день или на несколько часов, на свежем воздухе или с заходом в здания - у нас в ассортименте более 20 авторских экскурсий по Москве, выбирай и узнавай Москву вместе с нами!</p>
+                </div>
+                <div class="footer-contact">
+                    <p class="footer-title">Контакты</p>
+                    <div class="footer-contacts">
+                        <span><img src="img/maps-and-flags.png" width="20px" alt=""> Москва, Большая Спасская 12</span><br>
+                        <span><img src="img/close-envelope.png" width="20px" alt=""> moscow@imoscow.ru</span><br>
+                        <span><img src="img/telephone.png" width="20px" alt=""> 8(495)626-46-00</span>
+                    </div>
+                </div>
+                <div class="footer-text">
+                    <p class="footer-title">Последние новости</p>
+                    <span class="footer-desc">Curabitur felis nibh, lacinia non rhoncus vel, lobortis et lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                    <p class="footer-date">5 марта 2018</p>
+                    <p class="footer-desc">Curabitur felis nibh, lacinia non rhoncus vel, lobortis et lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                    <p class="footer-date">12 декабря 2017</p>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <div class="wrapper space">
+                <p>(C) 2018 Copyright. Все права защищены</p>        
+                <p>Designed by Nordic IT School</p>
+                <div class="social-link">
+                    <a href="#"><img src="icons/vk-social-network-logo.png" alt=""></a> 
+                    <a href="#"><img src="icons/facebook-logo.png" alt=""></a>
+                    <a href="#"><img src="icons/instagram.png" alt=""></a>
+                </div>     
+            </div>   
+        </div>
+        <div class="login">
+            <div class="login-flex">
+                <!-- <div class="closed-btn" onclick="closed('.login')">
+                    <div class="closed-round">
+                        <div id="closed"></div>
+                    </div>
+                </div> -->
+                <div class="login-window">
+                    <div class="close" onclick="closed('.login')"> <a >Закрыть</a> </div>
+                    <form action="form.php" method="GET">
+                        <label>
+                            <input id="login" maxlength="16" minlength="4"  type="text" name="myName" autocomplete="off" required>
+                            <span>Ваше имя</span>
+                        </label> <br><br>
+                        <label>
+                            <input id="pass" omaxlength="32" minlength="6" type="password" name="myName" autocomplete="off" required>
+                            <span>Пароль</span>
+                        </label> <br><br>
+                        <input type="submit" name="" id="" value="Войти">
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <div class="menu-mobile">
+            <div class="menu-mobile-field">
+                <a href="index.html">Главная</a>
+                <a href="trips.html">Наши услуги</a>
+                <a href="">О компании</a>
+                <a href="contacts.html">Контакты</a>
+                <a href="">Отзывы</a>
+                <a onclick="popUp('.login');" >Войти в аккаунт</a>
+            </div>
+        </div>
+
+        <div class="contact-form-success-area">
+            <div class="contact-form-success">
+                <div class="contact-form-success-window">
+                    <div class="contact-form-success-window-close">
+                        <div class="contact-form-success-window-close-btn"></div>
+                    </div>
+                    <div class="contact-form-success-window-text"></div>
+                    <div class="contact-form-success-window-telegram"></div>
+                </div>
+            </div>
+        </div>
+        
+    
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+    </html>

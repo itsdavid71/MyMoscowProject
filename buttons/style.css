@@ -1,0 +1,64 @@
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-item:nth-child(1) {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 10px 25px;
+  font-size: 24px;
+  background: red;
+  border-radius: 50px;
+  margin: 0 3px;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.button-item:nth-child(1):hover {
+  background: #353535;
+}
+
+.button-item:nth-child(1):active {
+  background: yellow;
+}
+
+.button-item:nth-child(2) {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 20px 50px;
+  font-size: 24px;
+  background: blue;
+  border-radius: 50px;
+  margin: 0 3px;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.button-item:nth-child(2):hover {
+  background: #353535;
+}
+
+.button-item:nth-child(3) {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 15px 35px;
+  font-size: 24px;
+  background: orange;
+  border-radius: 50px;
+  margin: 0 3px;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.button-item:nth-child(3):hover {
+  background: #353535;
+}
+/*# sourceMappingURL=style.css.map */

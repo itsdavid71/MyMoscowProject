@@ -1,0 +1,37 @@
+@mixin button($color, $size) {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: $size;
+    font-size: 24px;
+    background: $color;
+    border-radius: 50px;
+    margin: 0 3px;
+    cursor: pointer;
+    transition: .2s;
+    
+    &:hover {
+        background: darken($color: #4e4e4e, $amount: 10%);
+
+
+        // transform: rotate(5deg);
+    }
+}
+
+.button {
+    display: flex;  
+    align-items: center;
+}
+
+.button-item:nth-child(1) {
+    @include button(red, 10px 25px);
+    
+    &:active {
+        background: yellow;
+    }
+}
+.button-item:nth-child(2) {
+    @include button(blue, 20px 50px);
+}
+.button-item:nth-child(3) {
+    @include button(orange, 15px 35px);
+}
